@@ -1,0 +1,53 @@
+# Mac OS X
+.DS_Store
+.VolumeIcon.icns
+.fseventsd
+Icon
+
+# Xcode
+*/build/*
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+profile
+*.moved-aside
+DerivedData
+.idea/
+*.hmap
+*.xccheckout
+
+# Build products
+build/
+*.o
+
+# Jekyll Site
+_site/
+
+#CocoaPods
+Pods
+
+# No other repo directories
+.svn
+.hg
+CVS
+
+# No Sparkle private keys
+dsa_priv.pem
+
+# Python
+*.pyc
+
+# No Backup Files
+*~.nib
+*.swp
+*~
+*(Autosaved).rtfd/
+Backup[ ]of[ ]*.pages/
+Backup[ ]of[ ]*.key/
+Backup[ ]of[ ]*.numbers/
