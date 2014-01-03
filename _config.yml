@@ -1,3 +1,17 @@
 name: rcw3
 markdown: redcarpet
 pygments: true
+
+name: Life is Rich
+subtitle: All the time.
+url: www.lifeisrich.org
+
+author :
+  name: Rich Wardwell
+  email: rcw3_nospam at mac.com
+  github: rcw3
+  twitter: rcw3
+  linkedin: rcw3
+  stackoverflow: rcw3
+  dayJob: Black Pixel
+  dayJobURL: www.blackpixel.com

@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Test 2"
+date:   2014-01-02 16:38:09
+categories: Development Web
+author: Rich Wardwell
+---
+
+Test 2
+
+{% highlight objective-c %}
+{% endhighlight %}

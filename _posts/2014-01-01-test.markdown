@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Test!"
+date:   2014-01-01 16:38:09
+categories: Xcode Development
+author: Rich Wardwell
+---
+
+Test

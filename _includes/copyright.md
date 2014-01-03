@@ -1,0 +1,1 @@
+Copyright &copy;{{ site.time | date: '%Y' }} {{ site.author.name }}. All Rights Reserved.

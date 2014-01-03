@@ -1,44 +1,42 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+<!doctype html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ site.name }} - {{ page.title }}</title>
+    <meta name="description" content="Blog of {{ site.author.name }}" />
+    <meta name="author" content="{{ site.author.name }}" />
+    <meta name="copyright" content="{% include copyright.md %}" />
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/foundation.css" />
+    <script src="/js/modernizr.js"></script>
+	
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+  </head>
+  <body>
+    
+  {% include navbar.html %}
+  
+  <div class="row">
+   	 <div class="large-9 columns" role="content">
+  	  	{{ content }}
+  	</div>
+  {% include sidebar.html %}
+  </div>
+  
+  {% include footer.html %}
+ 
+  <link rel="alternate" type="application/rss+xml" title="RSS Feed for {{ site.url }}" href="/rss.xml" />
+  
+    <script src="/js/jquery.js"></script>
+    <script src="/js/templates/foundation.js"></script>
+    <script>
+      $(document).foundation();
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-
-    </head>
-    <body>
-
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
-
-          {{ content }}
-
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
-          </div>
-        </div>
-
-    </body>
+      var doc = document.documentElement;
+      doc.setAttribute('data-useragent', navigator.userAgent);
+    </script>
+  </body>
 </html>
