@@ -1,0 +1,32 @@
+{
+  "name": "Website",
+  "version": "0.0.0",
+  "description": "Unknown",
+  "main": "Unknown",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Unknown",
+  "license": "Unknown",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-cssmin": "~0.7.0",
+    "grunt-contrib-compass": "~0.7.0",
+    "grunt-contrib-imagemin": "~0.4.1",
+    "grunt-contrib-csslint": "~0.2.0",
+    "grunt-jekyll": "~0.4.1",
+    "grunt-jsbeautifier": "~0.2.6",
+    "load-grunt-tasks": "~0.2.1",
+    "grunt-concurrent": "~0.4.2",
+    "highlight.js": "~8.0.0"
+  }
+}

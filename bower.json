@@ -1,0 +1,22 @@
+{
+  "name": "Website",
+  "version": "0.0.0",
+  "authors": [
+    "Unknown"
+  ],
+  "license": "Unknown",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.0.3",
+    "modernizr": "~2.7.1",
+    "fastclick": "~0.6.10",
+    "foundation": "~5.0.2"
+  }
+}
