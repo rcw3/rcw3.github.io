@@ -1,0 +1,19 @@
+name: rcw3
+markdown: redcarpet
+pygments: false
+
+name: Life is Rich
+subtitle: All the time.
+url: www.lifeisrich.org
+
+author :
+  name: Rich Wardwell
+  email: rcw3_nospam at mac.com
+  github: rcw3
+  twitter: rcw3
+  linkedin: rcw3
+  stackoverflow: rcw3
+  dayJob: Black Pixel
+  dayJobURL: www.blackpixel.com
+  
+exclude: [README.md, bower_components, node_modules, scss, config.rb, Gruntfile.js, bower.json, package.json]
