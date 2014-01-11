@@ -269,7 +269,7 @@ module.exports = function(grunt) {
                 tasks: ['clean:cssPrep', 'cssmin', 'jekyll:build']
             },
             jekyll: {
-                files: ['_posts/*', '_layouts/*', 'about/*', 'kb/*', 'images/**/*'],
+                files: ['_posts/*', '_layouts/*', '_includes/*', 'about/*', 'kb/*', 'images/**/*'],
                 tasks: ['jekyll:build']
             }
         },

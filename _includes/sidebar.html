@@ -6,7 +6,10 @@
 	<h5>Categories</h5>
     <ul class="side-nav" style="margin-bottom:20px; padding:0px;">
 	{% for category in site.categories limit: 10 %}
-  		<li><a href="#">{{ category | first }}</a></li>
+    	{% if category contains 'kb' %}
+		{% else %}
+  			<li><a href="#">{{ category | first }}</a></li>
+		{% endif %}
 	{% endfor %}
     </ul>
 
