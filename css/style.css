@@ -1,0 +1,20 @@
+/* line 1, ../scss/style.scss */
+body {
+  background-image: url("/images/background.png");
+}
+
+/* line 2, ../scss/style.scss */
+.myHeader {
+  background-image: url("/images/nav_background.png");
+  margin-bottom: 20px;
+}
+
+/* line 3, ../scss/style.scss */
+h1 {
+  font-size: 260%;
+}
+
+/* line 4, ../scss/style.scss */
+.titleBar h1 {
+  color: white;
+}

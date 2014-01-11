@@ -9,16 +9,8 @@
     <meta name="author" content="{{ site.author.name }}" />
     <meta name="copyright" content="{% include copyright.md %}" />
 
-    <link rel="stylesheet" href="/css/foundation.css" />
-    <script src="/js/modernizr.js"></script>
-
-    <!-- syntax highlighting CSS [DISABLED - USING JS INSTEAD OF PYGMENTS]
-    <link rel="stylesheet" href="/css/syntax.css">-->
-
-	<script src="/js/highlight.pack.js"></script>
-	<link rel="stylesheet" href="/css/styles/github_xcode.css">
-	<script>hljs.initHighlightingOnLoad();</script>
-	
+    <script src="/js/vendor/modernizr.js"></script>
+    <link rel="stylesheet" href="/css/app.min.css" />
   </head>
   <body>
     
@@ -35,8 +27,7 @@
  
   <link rel="alternate" type="application/rss+xml" title="RSS Feed for {{ site.url }}" href="/rss.xml" />
   
-    <script src="/js/jquery.js"></script>
-    <script src="/js/templates/foundation.js"></script>
+    <script src="/js/app.min.js"></script>
     <script>
       $(document).foundation();
 

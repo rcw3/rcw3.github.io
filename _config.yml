@@ -1,6 +1,6 @@
 name: rcw3
 markdown: redcarpet
-pygments: false
+pygments: true
 
 name: Life is Rich
 subtitle: All the time.

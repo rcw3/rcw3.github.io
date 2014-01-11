@@ -1,6 +1,8 @@
 /* TODO:  
 
 	1. Would like to beautify css
+	2. Add EXCLUDE directory to JSS and CSS
+	3. Clean target
 
 
 for both css & js - need a local & merged prod variant
@@ -19,6 +21,11 @@ script + vendor = app.js
 
 	jekyll
 	concurrent
+
+----
+May need this:
+launchctl limit maxfiles 2048 2048 
+
 */
 
 
@@ -50,7 +57,6 @@ module.exports = function(grunt) {
 
         pkg: grunt.file.readJSON('package.json'),
 
-
         // COPY
 
         copy: {
@@ -60,7 +66,7 @@ module.exports = function(grunt) {
                     flatten: false,
                     cwd: bowerDir + 'foundation/scss/',
                     src: '**/*',
-                    dest: scssVendorDir + 'foudation/',
+                    dest: scssVendorDir + 'foundation/',
                 }]
             },
             script: {
@@ -68,7 +74,7 @@ module.exports = function(grunt) {
                     expand: true,
                     flatten: true,
                     src: [bowerDir + 'jquery/jquery.min.js',
-                        bowerDir + 'fastclick/lib/fastclick.js',
+                        //  bowerDir + 'fastclick/lib/fastclick.js',
                         bowerDir + 'foundation/js/foundation.min.js',
                         bowerDir + 'modernizr/modernizr.js'
                     ],
@@ -99,19 +105,27 @@ module.exports = function(grunt) {
             }
         },
 
+        clean: {
+            cssPrep: {
+                src: [cssDir + '**/*.min.css']
+            }
+        },
+
         cssmin: {
             minify: {
                 expand: true,
                 cwd: cssDir,
-                src: ['**/*.css', '!*.min.css'],
+                //src: ['**/*.css', '!*.min.css'],
+                src: ['**/*.css'],
                 dest: cssDir,
                 ext: '.min.css'
             },
             combine: {
-                    src: [cssDir + cssStyleMinFile, cssVendorDir + '**/*.min.css'],
-                    dest: cssDir + cssMergedMinFile
+                src: [cssVendorDir + '**/*.min.css', cssDir + cssStyleMinFile],
+                dest: cssDir + cssMergedMinFile
             },
         },
+
 
 
         // JAVASCRIPT
@@ -228,12 +242,15 @@ module.exports = function(grunt) {
         jekyll: {
             build: {
                 options: {
-                    serve: false
+                    serve: false,
+                    drafts: true
                 }
             },
             serve: {
                 options: {
-                    serve: true
+                    serve: true,
+                    auto: true,
+                    drafts: true
                 }
             }
         },
@@ -241,11 +258,19 @@ module.exports = function(grunt) {
         watch: {
             js: {
                 files: ['<%= jsbeautifier.files %>'],
-                tasks: ['jsbeautifier', 'jshint', 'concat', 'uglify']
+                tasks: ['jsbeautifier', 'jshint', 'uglify', 'jekyll:build']
             },
             scss: {
                 files: [scssDir + '*.scss'],
-                tasks: ['compass', 'cssmin']
+                tasks: ['compass']
+            },
+            css: {
+                files: ['css/**/*.css'],
+                tasks: ['clean:cssPrep', 'cssmin', 'jekyll:build']
+            },
+            jekyll: {
+                files: ['_posts/*', '_layouts/*', 'images/**/*'],
+                tasks: ['jekyll:build']
             }
         },
 
@@ -274,11 +299,11 @@ module.exports = function(grunt) {
         ]);
     });
 
-    grunt.registerTask('build', ['copy', 'compass:dev', 'cssmin', 'jsbeautifier', 'jshint', 'uglify', 'jekyll:build']);
-    grunt.registerTask('serve', ['copy', 'compass:dev', 'cssmin', 'jsbeautifier', 'jshint', 'uglify', 'jekyll:build', 'concurrent']);
-    grunt.registerTask('dist', ['copy', 'compass:prod', 'cssmin', 'jsbeautifier', 'jshint', 'uglify', 'jekyll:build']);
+    grunt.registerTask('build', ['copy', 'compass:dev', 'clean:cssPrep', 'cssmin', 'jsbeautifier', 'jshint', 'uglify', 'jekyll:build']);
+    grunt.registerTask('serve', ['copy', 'compass:dev', 'clean:cssPrep', 'cssmin', 'jsbeautifier', 'jshint', 'uglify', 'jekyll:build', 'concurrent']);
+    grunt.registerTask('dist', ['copy', 'compass:prod', 'clean:cssPrep', 'cssmin', 'jsbeautifier', 'jshint', 'uglify', 'jekyll:build']);
 
     // Default task(s).
-    grunt.registerTask('default', ['copy', 'compass:dev', 'cssmin', 'jsbeautifier', 'jshint', 'uglify', 'jekyll:build']);
+    grunt.registerTask('default', ['copy', 'compass:dev', 'clean:cssPrep', 'cssmin', 'jsbeautifier', 'jshint', 'uglify', 'jekyll:build']);
 
 };
