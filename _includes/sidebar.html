@@ -3,27 +3,19 @@
 <aside class="large-3 columns">
 
 <!-- Categories should change based on page -->
-	<h5>Categories</h5>
-    <ul class="side-nav" style="margin-bottom:20px; padding:0px;">
-	{% for category in site.categories limit: 10 %}
-    	{% if category contains 'kb' %}
+	<hr>
+	<h5>{% if page.category == 'kb' %}Knowledge Base{% else %}Blog{% endif %} Categories</h5>
+    <ul class="side-nav" style="margin-bottom:20px; padding:0px;">	
+		
+	{% for tag in site.tags limit: 10 %}  
+		{% if page.category == 'kb' %}
+  			<li><a href="/kb/category/{{ tag | first }}/">{{ tag | first }}</a></li>
 		{% else %}
-  			<li><a href="#">{{ category | first }}</a></li>
+  			<li><a href="/category/{{ tag | first }}/">{{ tag | first }}</a></li>
 		{% endif %}
 	{% endfor %}
     </ul>
-
-	<!--    
-	<h5>Knowledgebase</h5>
-	<ul class="side-nav">
-		<li><a href="#">Xcode</a></li>
-		<li><a href="#">Objective-C</a></li>
-		<li><a href="#">Shell</a></li>
-		<li><a href="#">System</a></li>
-		<li><a href="#">Web</a></li>
-	</ul>
-	-->
-	
+	<hr>
 
 	<div class="panel">
 	    <h5>About</h5>
