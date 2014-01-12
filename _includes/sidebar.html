@@ -10,8 +10,8 @@
 		<!-- Tags should change based on whether they exist in the category
 	{% if page.category == 'kb' %}
 
-		{% for page in site.categories.kb %} 
-		
+		{% for post in site.categories.kb %} 
+			// append post.tags
 		{% endfor %} 
 
 	{% endif %}
