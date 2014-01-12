@@ -2,10 +2,21 @@
 
 <aside class="large-3 columns">
 
-<!-- Categories should change based on page -->
 	<hr>
 	<h5>{% if page.category == 'kb' %}Knowledge Base{% else %}Blog{% endif %} Categories</h5>
-    <ul class="side-nav" style="margin-bottom:20px; padding:0px;">	
+    <ul class="side-nav" style="margin-bottom:20px; padding:0px;">		
+	
+
+		<!-- Tags should change based on whether they exist in the category
+	{% if page.category == 'kb' %}
+
+		{% for page in site.categories.kb %} 
+		
+		{% endfor %} 
+
+	{% endif %}
+			-->
+	
 		
 	{% for tag in site.tags limit: 10 %}  
 		{% if page.category == 'kb' %}
