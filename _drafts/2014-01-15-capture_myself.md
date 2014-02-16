@@ -7,6 +7,8 @@ tags: development objective-c mac ios
 author: Rich Wardwell
 ---
 
+# Capturing My(self)
+
 Occasionally in my software development career, some code or comment will trigger a bolt of fear through my psyche.  Were my assumptions incorrect?  Have I been doing this wrong all along?  Did I ever really understand why I was doing this in the first place?  Usually, the response includes stepping back, reassessing with a scientific analysis of the situation, writing some test code, and then reconfirmation (or readjustment) of my assumptions.
 
 Recently, while reviewing some technical reviews of a chapter in a book I’m coauthoring, that familiar pang of fear echoed once again through my consciousness.  The target of this loss of faith and understanding revolved around my assumptions and understanding of retain cycles, blocks, and capturing of `self`.  As in the past, it was time to solidify and reaffirm the foundation of understanding.  
