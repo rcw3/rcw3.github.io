@@ -7,7 +7,7 @@ tags: development objective-c mac ios
 author: Rich Wardwell
 ---
 
-One of the wonderful elements of my job at Black Pixel is participating in the blog there.  The following is a snippet from my [recent article](http://blackpixel.com/blog/2014/03/capturing-myself.html) on capturing self within blocks.  
+One of the wonderful elements of my job at Black Pixel is participating in the [blog](http://blackpixel.com/blog) there.  The following is a snippet from my [recent article](http://blackpixel.com/blog/2014/03/capturing-myself.html) on capturing self within blocks.  
 
 
 <blockquote>
