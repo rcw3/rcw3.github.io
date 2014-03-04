@@ -51,3 +51,5 @@ dsa_priv.pem
 Backup[ ]of[ ]*.pages/
 Backup[ ]of[ ]*.key/
 Backup[ ]of[ ]*.numbers/
+
+.sass-cache/
