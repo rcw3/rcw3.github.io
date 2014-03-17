@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Capture My(self)"
-date:   2014-04-03
+date:   2014-03-04
 categories: blog
 tags: development objective-c mac ios
 author: Rich Wardwell
