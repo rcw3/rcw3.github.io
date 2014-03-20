@@ -9,7 +9,7 @@ author: Rich Wardwell
 
 Authoring a technical book has been on my my _bucket list_ for many years. During my days as a Java developer, I taught a number of casual classes and study groups and became a bit obsessed with reading every Java book available to understand what worked and what didn't.  A consultant acquaintance who I discovered was also an author introduced me to Pearson / Addison-Wesley (a book publisher).  While I continued to read the same books, now I provided technical reviews and was paid for it!  I figured this was a good first step towards becoming an author myself.  
 
-<img src="images/bookcover.jpg" align="right"/>
+<img src="/images/bookcover.jpg" align="right"/>
 
 After more reviews than I can count, life became busy — both at the office while working on the technology behind the Shazam app and at home with the introduction of my two children to the world. I ran out of time and stopped doing technical reviews.  After a nearly 10 year hiatus, I started reviewing books again, but this time in the field of mobile development, and more specifically, iOS and Objective-C.  After quite a few reviews of books by the renowned author, Erica Sadun, an opportunity to make my bucket list item a reality presented itself — to co-author a new edition of one of the best-selling iOS books with Erica.  
 
