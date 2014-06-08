@@ -3,7 +3,7 @@ layout: post
 title:  "Swift and the Command Line"
 date:   2014-06-08
 categories: blog
-tags: development _Swift_ mac ios
+tags: development swift mac ios
 author: Rich Wardwell
 ---
 
