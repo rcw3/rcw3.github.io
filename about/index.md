@@ -14,7 +14,7 @@ Developer of software since childhood in the early 80s, making Rich old (wise), 
 
 #### Nerd Cred
 
-* Employee at [Black Pixel](http://www.blackpixel.com).
+* Director of Engineering at [Black Pixel](http://www.blackpixel.com).
 * Co-author of [The Core iOS Developer’s Cookbook (5th ed)](http://www.amazon.com/gp/product/0321948106/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0321948106&linkCode=as2&tag=levelpathsoftwar").
 * Co-inventor on multiple patents — two ([1](https://www.google.com/patents/US8453170), [2](http://www.google.com/patents/US7840177)) currently granted.
 * [Breaker](/audio/StumpTheExperts2008_clip.m4a) of [Stump the Experts](http://en.wikipedia.org/wiki/Stump_the_Experts) at [WWDC](http://).
